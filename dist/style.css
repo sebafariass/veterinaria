@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica;
+background: #909c79; 
+font-family: 'Staatliches', cursive;
+}
+header {
+    margin: 30px 0;
+}
+
+.vete {
+    font-family: 'Staatliches', cursive;
+}
+
+
+button {
+    border-radius: 20px ;
+}
+
+h1{
+    font-weight: 150;
+    color: white;
+}
+h2 {
+    
+    color:#004e92;
+    font-size: 22px;
+    margin-bottom:30px;
+}

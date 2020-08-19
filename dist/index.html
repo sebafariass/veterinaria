@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+  <title>Veterinaria Horas de Urgencia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+  <h1 class="text-center vete">Veterinaria</h1>
+
+  <div id="Formulario" class="container row mx-auto">
+
+    <h2 class="col-12 font-weight-bold py-3 text-center">Ingresa los datos solicitados</h2>
+
+    <div class="col-12 col-md-6 ">
+
+
+   <div class="text-center">
+    <h3 class="text-center">Datos dueño</h3>
+
+         
+    <!--////////////////////DATOS DUEÑO\\\\\INICIO \\\\\\\\\\\\\\\\ -->
+
+      <label for="dueno">Nombre: </label>
+      <input type="text" name="dueno" id="Persona" placeholder="Nombre" autofocus />
+         <!-- direccion -->
+      <label for="direccion">Dirección: </label>
+      <input type="text" name="direccion" id="Direccion"  placeholder=" Av. 101" />
+
+      <!-- telefono-->
+      <label for="telefono">Teléfono: </label>
+      <input type="number" name="telefono" id="Telefono"placeholder="ej: 984467xx" />
+   </div>
+    </div>
+
+
+    <!--////////////////////DATOS DUEÑO\\\\\FIN \\\\\\\\\\\\\\\\ -->
+
+
+
+    <!--////////////////////DATOS MASCOTA\\\\\INICIO \\\\\\\\\\\\\\\\ -->
+    <div class="col-12 col-md-6 text-center">
+
+              <h3>Datos mascota</h3>
+              <!-- NOMBRE DE MASCOTA-->
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="Nombre" placeholder="Luna" />
+
+      <!-- ESPECIE DE ANIMAL-MASCOTA-->
+      <label for="especie">Especie: </label>
+      <input type="text" name="especie" id="Especie" placeholder="Gato">
+
+      <!-- DESPLEGAR LISTA DE ANIMALES POSIBLES PARA ATENDER-->
+    
+
+      <!-- CAUSA/MOTIVO DE ATENCION -->
+      <label for="causa">Causa: </label>
+
+      <textarea rows="2" cols="52" name="causa" id="Causa" placeholder="Ingrese sintomas de animal"></textarea>
+    </div>
+
+
+       
+    <!--////////////////////DATOS MASCOTA\\\\\FIN \\\\\\\\\\\\\\\\ -->
+
+
+
+    
+      <button class="btn-success col-4 " type="submit" id="Boton">Agregar</button>
+    
+
+  </div>
+
+
+
+  <div id="Tabla" class="container-fluid">
+    <h2 class="text-center mt-5">Animales atendidos las 24 hrs antes</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre dueño</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Nombre animal</th>
+          <th scope="col">Especie</th>
+          <th scope="col">Causa</th>
+        </tr>
+      </thead>
+      <tbody id="table_animal">
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
